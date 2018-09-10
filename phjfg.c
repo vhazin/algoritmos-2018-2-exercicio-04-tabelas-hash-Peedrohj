@@ -29,23 +29,20 @@ int main(){
                     break;
                 }
             }
-
         }
         
         for(int i = 0; i<m; i++){
-            printf("%d -> ", i);
+            printf("\n%d -> ", i);
             for(int j = 0; j<=c; j++){
                 if(tabela[i][j] == 0){
-                    printf("\\\n");
+                    printf("\\");
                     break;
                 }else{
                     printf("%d -> ", tabela[i][j]);
                 }
             }
         }
-        if(testes){
-            printf("\n");
-        }
+        printf("\n");
         vezes = 0;
     }
 }
