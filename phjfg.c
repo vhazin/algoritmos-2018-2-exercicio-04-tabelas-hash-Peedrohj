@@ -21,7 +21,7 @@ int main(){
             vezes += 1;
             scanf("%d", &chaves);
 
-            posic = ((chaves) % m);
+            posic = chaves % m;
 
             for(int i = 0; i<c; i++){
                 if(tabela[posic][i] == 0){
@@ -33,13 +33,13 @@ int main(){
         }
         
         for(int i = 0; i<m; i++){
-            printf("%d ->", i);
-            for(int j = 0; j<c; j++){
+            printf("%d -> ", i);
+            for(int j = 0; j<=c; j++){
                 if(tabela[i][j] == 0){
                     printf("\\\n");
                     break;
                 }else{
-                    printf("%d ->", tabela[i][j]);
+                    printf("%d -> ", tabela[i][j]);
                 }
             }
         }
